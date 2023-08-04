@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-standart: #060606;
+    --color-icon: #d25215;
+    --color-icon-hover: #ea591a;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* TAGS */
+header {
+    border: 2px dashed darkmagenta;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-standart);
+}
+
+/* CLASSES */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* BANNER CHAMADA DE ATENÇÃO */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+}
+
+.banner .chamada-atencao {
+    border: 1px solid darkgoldenrod;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 10px;
+    animation: banner .6s alternate infinite;
+}
+
+@keyframes banner {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1.1);
+        background-color: yellow;
+    }
+    
+}
+
+/* HEADER */
+#header {
+    padding-block: 0.8rem;
+}
+
+.header .flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.header .social-links a i {
+    font-size: 24px;
+    color: var(--color-icon);
+    transition: .3s;
+}
+
+.header .social-links a i:hover {
+    transform: scale(1.3);
+    color: var(--color-icon-hover);
+}
